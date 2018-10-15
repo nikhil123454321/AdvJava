@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+</head>
+<body style="text-align: center;">
+<form name='loginFrm' action="Login" method="post">
+<h1 style="color: red">Login Page</h1>
+<b>UserName : </b>
+		<input type='text' id='uname' name='uname' required placeholder='Enter your First Name'><br>
+		<br>
+		<b>Password :	</b>	
+		<input type="password" name='pass' required placeholder='Enter your Last Name'><br><br>
+		<input type="submit" value="Submit">
+</form>
+</body>
+<script>
+function myFunc(){
+	var name = document.getElementById("uname").value;
+	alert("Hi "+name+"!"+" You have successfully logged in.");
+}
+</script>
+</html>
